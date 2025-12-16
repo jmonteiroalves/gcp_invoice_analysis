@@ -1,0 +1,13 @@
+# Arquivo de requisitos para o job PySpark
+# O PySpark em si é fornecido pelo ambiente Dataproc (Dataproc Image),
+# mas as seguintes bibliotecas podem ser usadas em scripts auxiliares.
+
+# Se você estiver rodando localmente, precisa do PySpark, mas no Dataproc não é necessário
+# Se for usar para testes locais:
+# pyspark==3.4.1 
+
+# Bibliotecas comuns para manipulação de dados
+# O pandas é frequentemente usado para manipulação de dados em testes locais ou 
+# em UDFs (User Defined Functions) no PySpark, por isso é bom incluí-lo.
+pandas
+pyarrow
