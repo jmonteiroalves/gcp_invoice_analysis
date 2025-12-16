@@ -10,6 +10,8 @@ Este projeto consiste em um pipeline de Engenharia de Dados **ETL (Extract, Tran
 
 O objetivo principal é ingerir dados brutos, aplicar regras de qualidade e negócio, e disponibilizar os dados processados para análise em um Data Warehouse.
 
+Exemplo de Dashboard Simplificado Resultante do Projeto: https://lookerstudio.google.com/s/iHRMmDq2a4I
+
 ### Arquitetura da Solução
 
 O fluxo de dados segue a arquitetura moderna de Data Lakehouse na Google Cloud Platform:
@@ -24,3 +26,4 @@ graph LR
     B -->|Leitura| C{Dataproc / PySpark}
     C -->|Limpeza & Regras| C
     C -->|Escrita| D[(BigQuery - Tabela Final)]
+
